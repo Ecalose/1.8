@@ -67,10 +67,10 @@
 
 - [付费一键脚本： 全程无代码秒级部署](https://mall.baiyue.one/#/1/detail)
 
-Github本地查看：[1.【宝塔+SQlite】](正式环境搭建教程.md#方法1宝塔nginxdocker数据库为sqlite)｜[2.【宝塔+Mysql】](正式环境搭建教程.md#方法2宝塔nginxdocker数据库为宝塔mysql)｜[3.【Heroku】](正式环境搭建教程.md#方法3heroku-无服务器部署)
+Github本地查看：[1.【宝塔+SQlite】](Docs/正式环境搭建教程.md#方法1宝塔nginxdocker数据库为sqlite)｜[2.【宝塔+Mysql】](Docs/正式环境搭建教程.md#方法2宝塔nginxdocker数据库为宝塔mysql)｜[3.【Heroku】](Docs/正式环境搭建教程.md#方法3heroku-无服务器部署)
 
 ### 2. 线上快速体验
-Heroku 一键部署：[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FBaiyuetribe%2FkamiFaka)
+Heroku 一键部署：[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Baiyuetribe/kamiFaka/tree/heroku)
 
 
 个人服务器快速安装：
