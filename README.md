@@ -70,7 +70,7 @@
 Github本地查看：[1.【宝塔+SQlite】](Docs/正式环境搭建教程.md#方法1宝塔nginxdocker数据库为sqlite)｜[2.【宝塔+Mysql】](Docs/正式环境搭建教程.md#方法2宝塔nginxdocker数据库为宝塔mysql)｜[3.【Heroku】](Docs/正式环境搭建教程.md#方法3heroku-无服务器部署)
 
 ### 2. 线上快速体验
-Heroku 一键部署：[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Baiyuetribe/kamiFaka/tree/heroku)
+Heroku 一键部署：[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Ecalose/1.8/tree/heroku)
 
 
 个人服务器快速安装：
