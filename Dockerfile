@@ -1,4 +1,4 @@
-FROM icaruz/faka:v1.8
+FROM baiyuetribe/kamifaka:latest
 LABEL 维护者="佰阅 2894049053@qq.com"
 
 WORKDIR /usr/src/app
