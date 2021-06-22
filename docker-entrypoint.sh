@@ -3,7 +3,9 @@ echo '====^_^===='
 echo '欢迎使用佰阅发卡(KAMIFAKA)程序'
 
 
-sed -i "s|'sqlite:///'+os.path.join(SQL_PATH,'kamifaka.db')|'postgresql+psycopg2://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}'|g" /usr/src/app/service/api/db.py
+if [ ${DATABASE_TYPE} = 'Mysql' ];then
+    sed -i "s/'sqlite:\/\/\/'+os.path.join(SQL_PATH,'kamifaka.db')/'mysql+pymysql:\/\/${MYSQL_USER}:${MYSQL_PASSWORD}@${MYSQL_HOST}:${MYSQL_PORT}\/${MYSQL_DATABASE}\?charset=utf8mb4'/g" /usr/src/app/service/api/db.py
+fi
 
 # 处理文件夹
 if [ ! -d '/usr/src/app/public/images' ]; then
@@ -25,9 +27,6 @@ fi
 # 然后初始化数据库
 python init_mysql.py
 
-# TG发卡后台任务
-#python app_tg.py >/dev/null 2>&1 &
-
 echo '程序初始化完成'
 # ["gunicorn","-k", "gevent", "--bind", "0.0.0.0:8000", "--workers", "8", "app:app"]
-gunicorn -k gevent --bind 0.0.0.0:${PORT} --workers 4 app:app
+gunicorn -k gevent --bind 0.0.0.0:8000 --workers 8 app:app
